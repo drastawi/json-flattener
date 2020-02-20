@@ -46,18 +46,5 @@ class TestFormatter(unittest.TestCase):
             '"data.truthfulness": true'
         ], formatted_json)
 
-    # Should throw if an invalid input has been provided.
-    def test_input(self):
-        formatted_json = flatten_json(json.loads("""
-                {
-                    "data": [
-                        1,
-                        2,
-                        3
-                    ]
-                }
-                """))
-
-
 if __name__ == '__main__':
     unittest.main()
